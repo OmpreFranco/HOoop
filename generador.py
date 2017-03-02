@@ -25,8 +25,6 @@ class Generador(object):
         #TODO agregar un ruido blanco a la senal
 #==============================================================================
 # Vamos a generar el ruido blanco
-        
-        
 #==============================================================================
 
         ret = [self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase) + self.amplitud *np.random.uniform(-1,1)*0.001 \
