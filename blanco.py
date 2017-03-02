@@ -12,6 +12,8 @@ class Blanco(object):
 
     def reflejar(self, senal, tiempo_inicial, tiempo_final):
 
+        ret = [senal[i]/4.0 for i in range(len(senal))]
+        return ret
         #TODO ver como se encajan los tiempos del blanco y del intervalo de tiempo
         #(interseccion de invervalos)
         # despues aplicar los parametros del blanco sobre ese intervalo de tiempo
