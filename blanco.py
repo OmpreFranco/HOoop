@@ -4,6 +4,9 @@ class Blanco(object):
     """
 
     def __init__(self, amplitud, tiempo_inicial, tiempo_final):
+        self.amp = amplitud
+        self.ti = tiempo_inicial
+        self.tf = tiempo_final
         #TODO: completar con la inicializacion de los parametros del objeto
         pass
 
@@ -13,4 +16,3 @@ class Blanco(object):
         #(interseccion de invervalos)
         # despues aplicar los parametros del blanco sobre ese intervalo de tiempo
         pass
-        
