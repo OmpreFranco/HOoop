@@ -18,6 +18,7 @@ class Generador(object):
 
         import math
 <<<<<<< HEAD
+<<<<<<< .merge_file_F0nQFN
 <<<<<<< HEAD
         import numpy as np
 =======
@@ -26,11 +27,18 @@ class Generador(object):
 =======
         import numpy.random as ran
 >>>>>>> a0321721285575c0f136693320f22ce405e9ea07
+=======
+        import numpy.random as ran
+=======
+        import numpy as np
+>>>>>>> master
+>>>>>>> .merge_file_GhkyKN
         cantidad_muestras = (tiempo_final - tiempo_inicial).seconds/\
         self.frecuencia_muestreo
 
         muestras = range(cantidad_muestras)
 <<<<<<< HEAD
+<<<<<<< .merge_file_F0nQFN
 <<<<<<< HEAD
         #TODO agregar un ruido blanco a la senal
 #==============================================================================
@@ -40,11 +48,14 @@ class Generador(object):
         ret = [self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase) + self.amplitud *np.random.uniform(-1,1)*0.001 \
         for i in muestras]
 =======
+=======
+>>>>>>> .merge_file_GhkyKN
         #TODO agregar un ruido blanco a la senal  ##################
 
         ############################################################
         ret = [self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase + \
         self.amplitud*ran.uniform(-1.,1.)*0.001) for i in muestras]
+<<<<<<< .merge_file_F0nQFN
 >>>>>>> a0321721285575c0f136693320f22ce405e9ea07
 =======
         #TODO agregar un ruido blanco a la senal  ##################
@@ -53,6 +64,17 @@ class Generador(object):
         ret = [self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase + \
         self.amplitud*ran.uniform(-1.,1.)*0.001) for i in muestras]
 >>>>>>> a0321721285575c0f136693320f22ce405e9ea07
+=======
+=======
+        #TODO agregar un ruido blanco a la senal
+#==============================================================================
+# Vamos a generar el ruido blanco
+#==============================================================================
+
+        ret = [self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase) + self.amplitud *np.random.uniform(-1,1)*0.001 \
+        for i in muestras]
+>>>>>>> master
+>>>>>>> .merge_file_GhkyKN
 
         return ret
 
